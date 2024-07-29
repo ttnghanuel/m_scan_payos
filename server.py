@@ -16,7 +16,7 @@ payOS = PayOS(
 app = Flask(__name__, static_folder='public', static_url_path='', template_folder='public')
 
 # Allow CORS for the specific domain
-CORS(app, resources={r"/create_payment_link": {"origins": "https://mscan.atwebpages.com"}})
+CORS(app, resources={r"/create_payment_link": {"origins": "*"}})
 
 @app.route('/create_payment_link', methods=['POST'])
 def create_payment():
