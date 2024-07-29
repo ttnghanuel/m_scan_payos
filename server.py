@@ -5,9 +5,7 @@ import random
 from payos import PaymentData as PayOSPaymentData, PayOS
 from flask import Flask, jsonify
 
-# Load environment variables
-from dotenv import load_dotenv
-load_dotenv()
+
 
 # Initialize PayOS
 payOS = PayOS(
