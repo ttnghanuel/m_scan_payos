@@ -3,7 +3,7 @@ import os
 import random
 from flask_cors import CORS
 from payos import PaymentData as PayOSPaymentData, PayOS
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 # Initialize PayOS
 payOS = PayOS(
@@ -15,8 +15,16 @@ payOS = PayOS(
 # Initialize Flask app
 app = Flask(__name__, static_folder='public', static_url_path='', template_folder='public')
 
-# Allow CORS for the specific domain
-CORS(app, resources={r"/create_payment_link": {"origins": "*"}})
+# Allow CORS for the specific domain with detailed settings
+cors = CORS(app, resources={
+    r"/create_payment_link": {
+        "origins": "https://mscan.atwebpages.com",
+        "methods": ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE", "OPTIONS", "CONNECT", "TRACE"],
+        "allow_headers": ["Content-Type", "Authorization", "X-Content-Type-Options", "Accept", "X-Requested-With", "Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"],
+        "supports_credentials": True,
+        "max_age": 7200
+    }
+})
 
 @app.route('/create_payment_link', methods=['POST'])
 def create_payment():
