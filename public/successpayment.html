@@ -31,19 +31,23 @@
                 </tr>
                 <tr class="line">
                     <td></td>
-                    <td ></td>
+                    <td></td>
                     <td class="total">Tổng cộng: <b>200,000 VND</b></td>
                 </tr>
             </table>
-
-           
         </div>
     </div>
     <div class="successful-payment-container">
         <img src="./Assets/Success.png" alt="Successful Signal" class="successful-payment">
     </div>
     <div class="download-button-container">
-        <button id="download-button" class="download-button" onclick="downloadFile()">Tải về</button>
+        <button id="downloadButton" class="download-button">Tải về</button>
     </div>
+
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            window.location.href = 'mscan_download.zip'; 
+        });
+    </script>
 </body>
 </html>
