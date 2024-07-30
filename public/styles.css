@@ -247,6 +247,7 @@ nav {
   margin: 30px auto; /* Center the section horizontally */
   background-image: url('./Assets/home-banner-background.png');
   color: white;
+  position: relative; /* Ensures child elements are positioned correctly */
 }
 
 .contact p.cta {
@@ -306,10 +307,11 @@ nav {
 .contact-img {
   position: absolute; /* Position the image absolutely */
   bottom: -20px; /* Adjust this value to control the overlap */
-  right: 10%; /* Adjust as needed */
+  right: 50%; /* Center the image horizontally */
+  transform: translateX(50%);
   width: 50%;
   max-width: 450px;
-  z-index: 1;
+  z-index: 2; /* Ensure the image is above other elements */
 }
 
 /* Media Queries for Responsiveness */
@@ -330,3 +332,5 @@ nav {
     width: 70%;
     right: 50%; /* Adjust as needed */
     transform: translateX(50%);
+  }
+}
