@@ -12,3 +12,7 @@ async function submitForm() {
         console.error('Error:', error);
     }
 }
+
+document.getElementById("btnClick").addEventListener("click", function() {
+        window.location.href = "https://payos-msca-duthi.onrender.com/payment.html";
+      });
