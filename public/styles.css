@@ -231,7 +231,7 @@ html, body {
   
 .contact {
     width: calc(100% - 40px); /* Full width minus margins */
-    margin: 30px; /* Margin to the left and right */
+    margin: 30px auto; /* Center horizontally and add vertical margins */
     padding: 20px;
     box-sizing: border-box;
     border-radius: 15px; /* Rounded corners */
@@ -239,66 +239,24 @@ html, body {
     text-align: left; /* Align text to the left */
     min-height: 300px;
     align-items: center;
-    margin-bottom: 50px;
+    position: relative; /* Ensure correct positioning for children */
 }
 
-.contact p.cta {
-    font-size: 38px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: white; /* Color for the call to action text */
-}
-
-.contact p {
-    font-size: 14px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: white; /* Standard text color */
-}
-
+/* Ensure the contact form and image are centered */
 .contact-form {
     display: flex;
-    margin-left: 550px;
-
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+    margin: 0; /* Remove margin for alignment */
 }
 
-.email-input {
-    padding: 10px;
-    font-size: 14px;
-    width: 300px; /* Adjust width as needed */
-    box-sizing: border-box;
-    border-radius: 20px 0 0 20px; /* Rounded corners, only left side */
-    border: 1px solid #ccc; /* Border for the input */
-    outline: none; /* Remove outline on focus */
-}
-
-.email-input::placeholder {
-    color: #888; /* Customize placeholder color */
-    font-style: italic; /* Customize placeholder style */
-}
-
-.send-button {
-    padding: 10px 20px;
-    font-size: 14px;
-    background-color: white; /* Button background color */
-    color: #2481EB;
-    border: none;
-    border-radius: 0 20px 20px 0; /* Rounded corners, only right side */
-    cursor: pointer;
-    margin-left: -5px; /* Negative margin to overlap with the input */
-    z-index: 1; /* Ensure the button is above the input */
-}
-
-.send-button:hover {
-    background-color: #2481EB;
-    color: white; /* Button hover effect */
-}
 .contact img {
     position: absolute;
     right: -0.5px; /* Adjust position to partially overlap the container */
     width: 450px;
     z-index: 1;
     transform: translateY(-80%);
+}
 
 
     
