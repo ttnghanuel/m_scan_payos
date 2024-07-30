@@ -1,4 +1,4 @@
-document.getElementById('btnClick').addEventListener('click', submitForm);
+document.getElementById('btnPayment').addEventListener('click', submitForm);
 
 async function submitForm() {
     try {
