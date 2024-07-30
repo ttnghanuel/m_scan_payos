@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    padding-left: 88px;
+}
+
+header img {
+    max-height: 50px;
+    padding-right: 88px;
+}
+
+.order-details {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.order-header {
+    text-align: left;
+}
+
+.order-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.order-content {
+    padding: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 5px; 
+    text-align: left;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+
+.product-image-cell {
+    width: 60px; 
+}
+
+.product-image {
+    max-width: 50px; 
+    height: auto;
+    float: right;
+    /* padding-bottom: 15px; */
+}
+
+.product-price {
+    width: 200px; 
+    text-align: right;
+}
+
+.product-name {
+    width: 800px; 
+}
+
+.total{
+    text-align: right;
+    padding-top: 15px;
+}
+
+.line{
+border-top: 2px solid #ccc;
+}
+
+.payment-button-container {
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 5px;
+}
+
+.payment-button {
+    background-color: #2481EB ; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 32px;
+}

@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    padding-left: 88px;
+}
+
+header img {
+    max-height: 50px;
+    padding-right: 88px;
+}
+
+.order-details {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.order-header {
+    text-align: left;
+}
+
+.order-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.order-content {
+    padding: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 5px; 
+    text-align: left;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+
+.product-image-cell {
+    width: 60px; 
+}
+
+.product-image {
+    max-width: 50px; 
+    height: auto;
+    float: right;
+    /* padding-bottom: 15px; */
+}
+
+.product-price {
+    width: 200px; 
+    text-align: right;
+}
+
+.product-name {
+    width: 800px; 
+}
+
+.total{
+    text-align: right;
+    padding-top: 15px;
+}
+
+.line{
+border-top: 2px solid #ccc;
+}
+
+.failed-payment-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-grow: 1;
+}
+
+.failed-payment {
+    max-width:150px; 
+    height: auto;
+}
+
+.return-button-container{
+    text-align: center;
+    padding-top: 5px;
+}
+.return-button{
+    background-color: white  ; 
+    color: #2481EB;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid #2481EB;
+    border-radius: 32px;
+}
