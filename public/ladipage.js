@@ -14,5 +14,5 @@ async function submitForm() {
 }
 
 document.getElementById("btnClick").addEventListener("click", function() {
-        window.location.href = "https://payos-msca-duthi.onrender.com/payment.html";
+        window.location.replace("https://payos-msca-duthi.onrender.com/payment.html");
       });
