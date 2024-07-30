@@ -5,22 +5,19 @@ html, body {
     box-sizing: border-box;
     width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* Apply Box-sizing Globally */
-*, *::before, *::after {
+  }
+  
+  /* Apply Box-sizing Globally */
+  *, *::before, *::after {
     box-sizing: inherit;
-}
-
-/* Base Styles */
-body {
+  }
+  
+  /* Introduction Section Styles */
+  body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6; /* Improved readability */
-    color: #333; /* Base text color for better contrast */
-}
-
-/* Introduction Section Styles */
-.introduction {
+  }
+  
+  .introduction {
     background-image: url('./Assets/home-banner-background.png');
     background-size: cover; /* Ensure the background covers the entire area */
     background-repeat: no-repeat; /* Prevent the background from repeating */
@@ -29,193 +26,293 @@ body {
     min-height: 100vh;
     position: relative;
     overflow: hidden; /* Ensure no overflow */
-    text-align: center; /* Center-align all text in this section */
-}
-
-.Logo {
+  }
+  
+  .Logo {
     position: absolute;
     top: 20px;
     left: 20px;
-}
-
-nav {
+  }
+  
+  nav {
     position: absolute;
     top: 20px;
     right: 20px;
-}
-
-.button-container {
-    margin: 40px auto; /* Center and add space around the button */
-}
-
-.mua-ngay {
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .mua-ngay {
     background-color: white;
     color: #2481EB;
     border: none;
-    padding: 15px 30px; /* Increased padding for better click area */
-    font-size: 18px; /* Larger font size for better readability */
+    padding: 10px 20px;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
-}
-
-.mua-ngay:hover {
+  }
+  
+  .mua-ngay:hover {
     background-color: #2481EB;
     color: white;
-}
-
-.nav__links {
+  }
+  .nav__links {
     list-style: none;
     display: flex;
     gap: 20px;
-}
-
-.nav__links a {
+  }
+  
+  .nav__links a {
     color: white;
     text-decoration: none;
-    font-size: 18px; /* Larger font size for better visibility */
-    transition: color 0.3s; /* Smooth transition effect */
-}
-
-.nav__links a:hover {
-    color: #ffb700; /* Change color on hover for better interaction */
-}
-
-.header-intro {
-    font-size: 36px; /* Adjusted for a more prominent appearance */
+    font-size: 16px;
+  }
+  
+  .header-intro {
+    text-align: center;
+    font-size: 32px;
     font-weight: bold;
-    margin-top: 150px; /* Adjusted for better positioning */
-    position: relative;
     z-index: 1;
-}
-
-.intro-img {
+    margin-top: 100px; /* Adjust this value to move the text below the logo and nav bar */
+    position: relative; /* Ensures it's positioned correctly */
+  }
+  
+  .intro-img {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.intro-img img {
+  }
+  
+  .intro-img img {
     width: 100%;
-    max-width: 700px; /* Increased max-width for better visual impact */
+    max-width: 600px;
     height: auto;
-}
-
-/* Additional Sections Styles */
+  }
+  
+ /* Additional Sections Styles */
 .how-it-helps, .mscan-is-good, .partners, .contact {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-}
-
-.mscan-is-good {
+  }
+  .mscan-is-good {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 70vh; /* Slightly increased minimum height */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text inside the paragraph is centered */
+    min-height: 68vh; /* Ensure the container has a minimum height */
     background-image: url('./Assets/bgagain.png');
-    background-size: cover; /* Ensure background covers entire area */
     color: white;
-}
-
-.mscan-is-good p {
-    font-size: 42px; /* Slightly larger font size */
-}
-
-.partners p {
+  }
+  .mscan-is-good p {
+    font-size: 40px;
+  }
+ 
+  .partners p{
     color: #2481EB;
-    font-size: 42px; /* Increased font size */
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
-}
+  }
 
-.contact {
+  .contact {
     background-image: url('./Assets/home-banner-background.png');
-    background-size: cover; /* Ensure background covers entire area */
     color: white;
-    width: calc(100% - 40px); /* Full width minus margins */
-    margin: 30px auto; /* Center and add space around the contact section */
-    padding: 20px;
-    border-radius: 15px; /* Rounded corners */
+  }
+  .heading{
+    font-weight: bold;
+  }
+  
+  .heading-how-it-helps {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2481EB;
+    margin-bottom: 20px;
     text-align: center;
-    min-height: 350px; /* Increased minimum height */
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .features {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    position: relative;
+  }
+  
+  .feature-box {
+    width: 200px; /* Ensure the box is square */
+    height: 200px; /* Ensure the box is square */
+    background-color: white;
+    border: 1px solid #fffbfb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative; /* Add relative positioning */
+  }
+  
+  .icon {
+    position: absolute; /* Position the icon absolutely */
+    top: -25px; /* Adjust the top position as needed */
+    left: 50%; /* Center the icon horizontally */
+    transform: translateX(-50%); /* Center the icon horizontally */
+    padding: 5px;
+  }
+  
+  .icon img {
+    width: 50px; /* Resize the icon */
+    height: 50px; /* Resize the icon */
+  }
+  
+  .feature-box p {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  .feature-box p:first-of-type {
+    margin-top: 50px; /* Add margin to create space for the icon */
+  }
+  
+  
+  
+  .brands {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusts space between brand items */
+    gap: 20px; /* Adjust gap as needed */
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    width: 30%; /* Ensures three brands per line */
+    min-width: 300px; /* Ensures minimum width for each brand */
+    box-sizing: border-box;
+    text-align: left;
+  }
+  
+  .brand img {
+    width: 100px; /* Adjust the size of the logo as needed */
+    height: auto;
+    margin-right: 10px; /* Space between the logo and the brand info */
+  }
+  
+  .brand-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .brand-name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .fanpages {
+    font-size: 12px;
+    color: #666; /* Optional: Change the color to differentiate the fanpage count */
+  }
+  
+.contact {
+    width: calc(100% - 40px); /* Full width minus margins */
+    margin: 30px; /* Margin to the left and right */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    text-align: center; /* Align text to the center */
+    min-height: 300px;
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative; /* Ensure the image can be positioned absolutely */
+    margin-bottom: 50px;
 }
 
 .contact-content {
-    max-width: 600px;
+    max-width: 600px; /* Limit the width of the content */
 }
 
 .contact p.cta {
-    font-size: 40px; /* Adjusted for prominence */
+    font-size: 38px;
     font-weight: bold;
-    margin-bottom: 15px; /* Increased margin for spacing */
-    color: white;
+    margin-bottom: 10px;
+    color: white; /* Color for the call to action text */
 }
 
 .contact p {
-    font-size: 16px; /* Slightly larger font size for better readability */
-    margin-bottom: 25px; /* Increased margin for spacing */
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: white; /* Standard text color */
 }
 
 .contact-form {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Added margin for spacing */
 }
 
 .email-input {
-    padding: 12px; /* Increased padding for better usability */
-    font-size: 16px; /* Larger font size */
+    padding: 10px;
+    font-size: 14px;
     width: 300px; /* Adjust width as needed */
-    border-radius: 25px 0 0 25px; /* Rounded corners, only left side */
-    border: 1px solid #ccc;
-    outline: none;
-    transition: border-color 0.3s; /* Smooth transition effect */
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px; /* Rounded corners, only left side */
+    border: 1px solid #ccc; /* Border for the input */
+    outline: none; /* Remove outline on focus */
 }
 
 .email-input::placeholder {
-    color: #888;
-    font-style: italic;
+    color: #888; /* Customize placeholder color */
+    font-style: italic; /* Customize placeholder style */
 }
 
 .send-button {
-    padding: 12px 25px; /* Increased padding */
-    font-size: 16px; /* Larger font size */
-    background-color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: white; /* Button background color */
     color: #2481EB;
     border: none;
-    border-radius: 0 25px 25px 0; /* Rounded corners, only right side */
+    border-radius: 0 20px 20px 0; /* Rounded corners, only right side */
     cursor: pointer;
-    margin-left: -5px;
-    z-index: 1;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+    margin-left: -5px; /* Negative margin to overlap with the input */
+    z-index: 1; /* Ensure the button is above the input */
 }
 
 .send-button:hover {
     background-color: #2481EB;
-    color: white;
+    color: white; /* Button hover effect */
 }
 
 .contact img {
     position: absolute;
-    right: -20px; /* Adjusted position for better overlap */
-    width: 400px; /* Increased width */
+    right: -0.5px; /* Adjust position to partially overlap the container */
+    width: 350px;
     z-index: 1;
-    transform: translateY(-60%); /* Adjusted transform for better positioning */
+    transform: translateY(-100%);
 }
 
-.footer {
+.footer{
     width: 100%;
     height: 300px;
-    background-image: url('./Assets/footer.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url('./Assets/footer.png');
+  background-size: cover; /* Ensure the background image covers the entire div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+
 }
