@@ -304,7 +304,7 @@ html, body {
     right: -0.5px; /* Adjust position to partially overlap the container */
     width: 350px;
     z-index: 1;
-    transform: translateY(-30%);
+    transform: translateY(-100%);
 }
 
 .footer{
