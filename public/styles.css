@@ -303,9 +303,11 @@ nav {
   color: white;
 }
 
-.contact img {
-  position: relative;
-  width: 100%;
+.contact-img {
+  position: absolute; /* Position the image absolutely */
+  bottom: -20px; /* Adjust this value to control the overlap */
+  right: 10%; /* Adjust as needed */
+  width: 50%;
   max-width: 450px;
   z-index: 1;
 }
@@ -324,8 +326,7 @@ nav {
     width: 100%;
     border-radius: 20px;
   }
-  .contact img {
-    width: 300px;
-  }
-}
-
+  .contact-img {
+    width: 70%;
+    right: 50%; /* Adjust as needed */
+    transform: translateX(50%);
