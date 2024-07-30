@@ -58,6 +58,7 @@ table th, table td {
     background-color: #fff;
 }
 
+
 .product-image-cell {
     width: 60px; 
 }
@@ -66,6 +67,7 @@ table th, table td {
     max-width: 50px; 
     height: auto;
     float: right;
+    /* padding-bottom: 15px; */
 }
 
 .product-price {
@@ -77,51 +79,30 @@ table th, table td {
     width: 800px; 
 }
 
-.total {
+.total{
     text-align: right;
     padding-top: 15px;
 }
 
-.line {
-    border-top: 2px solid #ccc;
+.line{
+border-top: 2px solid #ccc;
 }
 
-.failed-payment-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-grow: 1;
+.payment-button-container {
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 5px;
 }
 
-.failed-payment {
-    max-width: 150px; 
-    height: auto;
-}
-
-.status-message-container {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.status-message {
-    font-size: 16px;
-    color: #333;
-}
-
-.return-button-container {
-    text-align: center;
-    padding-top: 10px;
-}
-
-.return-button {
-    background-color: #2481EB;
+.payment-button {
+    background-color: #2481EB ; 
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     width: 200px;
     height: 40px;
-    font-size: 14px;
+    font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     border: none;
