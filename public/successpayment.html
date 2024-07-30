@@ -40,13 +40,18 @@
     <div class="successful-payment-container">
         <img src="./Assets/Success.png" alt="Successful Signal" class="successful-payment">
     </div>
-    <div class="download-button-container">
-        <button id="downloadButton" class="download-button">Tải về</button>
+    <div class="button-container">
+        <button id="downloadButton" class="action-button">Tải về</button>
+        <button id="returnHomeButton" class="action-button">Trở về trang chủ</button>
     </div>
 
     <script>
         document.getElementById('downloadButton').addEventListener('click', function() {
             window.location.href = './Assets/mscan_download.zip'; 
+        });
+
+        document.getElementById('returnHomeButton').addEventListener('click', function() {
+            window.location.href = 'index.html'; // Change to your home page URL
         });
     </script>
 </body>
