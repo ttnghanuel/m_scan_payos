@@ -302,7 +302,7 @@ html, body {
 .contact img {
     position: absolute;
     right: -0.5px; /* Adjust position to partially overlap the container */
-    width: 450px;
+    width: 350px;
     z-index: 1;
     transform: translateY(-80%);
 }
