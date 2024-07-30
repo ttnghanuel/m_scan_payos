@@ -22,15 +22,15 @@ CORS(app, resources={r"/create_payment_link": {"origins": "*"}})
 @app.route('/create_payment_link', methods=['POST'])
 def create_payment():
     print("Received a request for /create_payment_link")  # Debug log
-    domain = "https://mscan.atwebpages.com"
+    domain = "https://payos-msca-duthi.onrender.com"
     try:
         # Create a payment data object
         payment_data = PayOSPaymentData(
             orderCode=random.randint(1000, 9999),
             amount=200000,
             description='demo',
-            cancelUrl=f"{domain}/cancel.html",
-            returnUrl=f"{domain}/success.html"
+            cancelUrl=f"{domain}/failed.html",
+            returnUrl=f"{domain}/successpayment.html"
         )
         print(f"Payment data created: {payment_data}")  # Debug log
 
