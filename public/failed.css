@@ -88,8 +88,8 @@ table th, table td {
 
 .failed-payment-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
     flex-grow: 1;
 }
 
@@ -98,14 +98,24 @@ table th, table td {
     height: auto;
 }
 
+.status-message-container {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.status-message {
+    font-size: 16px;
+    color: #333;
+}
+
 .button-container {
     text-align: center;
     padding-top: 5px;
 }
 
-.return-button, .cancel-button {
-    background-color: white; 
-    color: #2481EB;
+.return-button {
+    background-color: #2481EB; 
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -114,11 +124,10 @@ table th, table td {
     font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
-    border: 1px solid #2481EB;
+    border: none;
     border-radius: 32px;
 }
 
-.return-button:hover, .cancel-button:hover {
-    background-color: #2481EB;
-    color: white;
+.return-button:hover {
+    background-color: #1c6fce;
 }
