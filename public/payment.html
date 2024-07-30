@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Failed</title>
-    <link rel="stylesheet" href="failed.css">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
-<body>
+<body>                                                                               
     <header>
         <h1>Thanh Toán Sản Phẩm</h1>
         <img src="logo mscan.png" alt="Brand Logo">
@@ -35,16 +35,14 @@
                     <td class="total">Tổng cộng: <b>200,000 VND</b></td>
                 </tr>
             </table>
+
+           
         </div>
     </div>
-    <div class="failed-payment-container">
-        <img src="./Assets/Failed.png" alt="Failed Signal" class="failed-payment">
+    <div class="payment-button-container" id="btnPayment">
+        <button class="payment-button">Thanh toán</button>
     </div>
-    <div class="status-message-container">
-        <p class="status-message">Bạn đã hủy thành công</p>
-    </div>
-    <div class="return-button-container">
-        <button class="return-button" onclick="window.location.href='homepage.html'">Return to Homepage</button>
-    </div>
+    <script src="ladipage.js"></script>
+
 </body>
 </html>
