@@ -26,10 +26,7 @@ html, body {
     min-height: 100vh;
     position: relative;
     overflow: hidden; /* Ensure no overflow */
-    padding: 20px; /* Add padding for better spacing */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow around the section */
-    border-radius: 10px; /* Optional: Rounded corners */
-}
+  }
   
   .Logo {
     position: absolute;
