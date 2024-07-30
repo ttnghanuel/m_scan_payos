@@ -1,4 +1,4 @@
-document.getElementById('btnClick').addEventListener('click', submitForm);
+document.getElementById('btnPayment').addEventListener('click', submitForm);
 
 async function submitForm() {
     try {
@@ -13,6 +13,6 @@ async function submitForm() {
     }
 }
 
-document.getElementById("btnPayment").addEventListener("click", function() {
+document.getElementById("btnClick").addEventListener("click", function() {
         window.location.replace("https://payos-msca-duthi.onrender.com/payment.html");
       });
