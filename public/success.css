@@ -58,7 +58,6 @@ table th, table td {
     background-color: #fff;
 }
 
-
 .product-image-cell {
     width: 60px; 
 }
@@ -67,7 +66,6 @@ table th, table td {
     max-width: 50px; 
     height: auto;
     float: right;
-    /* padding-bottom: 15px; */
 }
 
 .product-price {
@@ -79,33 +77,34 @@ table th, table td {
     width: 800px; 
 }
 
-.total{
+.total {
     text-align: right;
     padding-top: 15px;
 }
 
-.line{
-border-top: 2px solid #ccc;
+.line {
+    border-top: 2px solid #ccc;
 }
 
 .successful-payment-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
 }
 
 .successful-payment {
-    max-width:150px; 
+    max-width: 150px; 
     height: auto;
 }
 
-.download-button-container{
+.button-container {
     text-align: center;
     padding-top: 5px;
 }
-.download-button{
-    background-color: white  ; 
+
+.action-button {
+    background-color: #fff;
     color: #2481EB;
     text-align: center;
     text-decoration: none;
@@ -117,4 +116,10 @@ border-top: 2px solid #ccc;
     cursor: pointer;
     border: 1px solid #2481EB;
     border-radius: 32px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.action-button:hover {
+    background-color: #2481EB;
+    color: #fff;
 }
